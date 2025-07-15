@@ -9,7 +9,7 @@ const App = () => {
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(false);
   const [searchQuery, setSearchQuery] = useState("Third Party Risk Assessment");
-  const [location, setLocation] = useState("India");
+  const [location, setLocation] = useState("Bangalore India OR remote");
   const [jobResults, setJobResults] = useState([]);
   const [systemStatus, setSystemStatus] = useState("Loading...");
 
