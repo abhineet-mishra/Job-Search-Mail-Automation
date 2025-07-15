@@ -266,7 +266,7 @@ async def send_email_report(jobs: List[JobListing], recipient_email: str):
         html_content += """
             </table>
             
-            <p><strong>Note:</strong> Jobs are filtered for recent postings (last 24 hours) and focus on Third Party Risk, Vendor Risk, and Supplier Risk Assessment roles in Bangalore and remote positions for product companies.</p>
+            <p><strong>Note:</strong> Jobs are filtered for recent postings (last 7 days) and focus on Third Party Risk, Vendor Risk, and Supplier Risk Assessment roles in Bangalore and remote positions for product companies.</p>
             
             <p>Best regards,<br>
             Automated Job Search System</p>
