@@ -149,15 +149,18 @@
         
   - task: "Daily scheduling at 9 AM IST"
     implemented: true
-    working: false
+    working: true
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
       - working: false
         agent: "main"
         comment: "Scheduler implemented with pytz timezone support, runs at 9 AM IST daily"
+      - working: true
+        agent: "testing"
+        comment: "TESTED: Daily scheduling system working correctly. Scheduler starts automatically on app startup using background thread. Uses pytz Asia/Kolkata timezone for 9 AM IST scheduling. Manual trigger endpoint POST /api/trigger-manual-search successfully executes the full automation flow including job search, filtering, database storage, and email sending. Backend logs show scheduler is active and daily_job_search_task executes properly."
         
   - task: "24-hour job filtering"
     implemented: true
