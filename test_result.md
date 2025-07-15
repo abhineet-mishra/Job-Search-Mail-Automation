@@ -210,10 +210,6 @@
 
 ## test_plan:
   current_focus:
-    - "Job search functionality with Google search"
-    - "Email automation with Gmail"
-    - "Daily scheduling at 9 AM IST"
-    - "24-hour job filtering"
     - "Manual job search interface"
   stuck_tasks: []
   test_all: false
