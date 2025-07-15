@@ -46,7 +46,7 @@ const App = () => {
       const response = await axios.post(`${API}/search-jobs`, {
         query: searchQuery,
         location: location,
-        days_filter: 1
+        days_filter: 7
       });
       setJobs(response.data.jobs);
     } catch (error) {
