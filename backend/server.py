@@ -65,7 +65,7 @@ class JobListing(BaseModel):
 class JobSearchRequest(BaseModel):
     query: str
     location: str = "Bangalore India OR remote"
-    days_filter: int = 1
+    days_filter: int = 7
 
 class EmailSettings(BaseModel):
     recipient_email: str
