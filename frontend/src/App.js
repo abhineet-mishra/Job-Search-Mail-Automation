@@ -95,7 +95,7 @@ const App = () => {
             TPRM Job Search Automation
           </h1>
           <p className="text-xl text-gray-600 mb-4">
-            Automated Third Party Risk Assessment Job Search for Bangalore, India
+            Automated Third Party Risk Assessment Job Search for Bangalore & Remote Positions
           </p>
           <div className="inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full">
             <div className="w-3 h-3 bg-green-400 rounded-full mr-2 animate-pulse"></div>
