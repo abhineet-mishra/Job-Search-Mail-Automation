@@ -390,15 +390,15 @@ async def send_test_email():
                 job_title="Senior Third Party Risk Analyst",
                 company_name="Tech Corp India",
                 job_link="https://example.com/job1",
-                location="Bangalore, India",
+                location="Bangalore, India / Remote",
                 keywords=["Third Party Risk Management", "Vendor Risk Assessment", "Compliance", "Risk Mitigation", "GRC"],
                 technical_skills=["GRC Tools", "SQL", "Risk Frameworks", "Excel", "Regulatory Compliance"]
             ),
             JobListing(
-                job_title="Vendor Risk Manager",
+                job_title="Vendor Risk Manager - Remote",
                 company_name="Product Company Ltd",
                 job_link="https://example.com/job2",
-                location="Bangalore, India",
+                location="Remote / Bangalore, India",
                 keywords=["Vendor Risk", "Supplier Management", "Risk Assessment", "Compliance", "Due Diligence"],
                 technical_skills=["ServiceNow", "Risk Modeling", "Python", "Business Intelligence", "SOX Compliance"]
             )
