@@ -300,7 +300,7 @@ async def daily_job_search_task():
         jobs = await search_jobs_google(
             query="Third Party Risk Assessment",
             location="Bangalore India OR remote",
-            days_filter=1
+            days_filter=7
         )
         
         # Filter for relevant jobs (basic filtering)
