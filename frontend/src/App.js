@@ -177,7 +177,7 @@ const App = () => {
             </div>
             <div className="flex items-center">
               <div className="w-4 h-4 bg-orange-500 rounded-full mr-3"></div>
-              <span className="font-medium">Filter: Last 7 days, Bangalore product companies</span>
+              <span className="font-medium">Filter: Last 24 hours, Bangalore & Remote positions</span>
             </div>
           </div>
         </div>
