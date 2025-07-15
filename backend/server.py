@@ -79,7 +79,7 @@ class JobSearchResult(BaseModel):
     search_date: datetime
 
 # Job search and scraping functions
-async def search_jobs_google(query: str, location: str = "India", days_filter: int = 1) -> List[JobListing]:
+async def search_jobs_google(query: str, location: str = "India", days_filter: int = 7) -> List[JobListing]:
     """Search for jobs using Google search with briansjobsearch patterns"""
     jobs = []
     
