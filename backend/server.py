@@ -141,7 +141,7 @@ async def search_jobs_google(query: str, location: str = "India", days_filter: i
                                         location="Bangalore, India / Remote",
                                         keywords=keywords,
                                         technical_skills=technical_skills,
-                                        posted_date="Recent (24 hours)",
+                                        posted_date="Recent (7 days)",
                                         source="google_search"
                                     )
                                     jobs.append(job)
