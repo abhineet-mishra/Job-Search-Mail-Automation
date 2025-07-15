@@ -236,7 +236,7 @@ async def send_email_report(jobs: List[JobListing], recipient_email: str):
         </head>
         <body>
             <h2>TPRM Job Search Results - {datetime.now().strftime('%Y-%m-%d')}</h2>
-            <p>Found {len(jobs)} relevant Third Party Risk Assessment jobs in Bangalore, India</p>
+            <p>Found {len(jobs)} relevant Third Party Risk Assessment jobs in Bangalore, India & Remote positions</p>
             
             <table>
                 <tr>
