@@ -79,16 +79,18 @@ class JobSearchResult(BaseModel):
     search_date: datetime
 
 # Job search and scraping functions
-async def search_jobs_google(query: str, location: str = "India", days_filter: int = 7) -> List[JobListing]:
+async def search_jobs_google(query: str, location: str = "India", days_filter: int = 1) -> List[JobListing]:
     """Search for jobs using Google search with briansjobsearch patterns"""
     jobs = []
     
-    # Multiple search variations for better results
+    # Multiple search variations for better results - including remote positions
     search_queries = [
-        f'"{query}" jobs in Bangalore India site:linkedin.com OR site:naukri.com OR site:indeed.com',
-        f'"Third Party Risk" OR "Vendor Risk" OR "Supplier Risk" jobs Bangalore India',
-        f'"TPRM" OR "Third Party Risk Management" jobs Bangalore product company',
-        f'"Risk Assessment" analyst jobs Bangalore India 6 years experience'
+        f'"{query}" jobs in Bangalore India OR remote site:linkedin.com OR site:naukri.com OR site:indeed.com',
+        f'"Third Party Risk" OR "Vendor Risk" OR "Supplier Risk" jobs Bangalore India OR remote',
+        f'"TPRM" OR "Third Party Risk Management" jobs Bangalore OR remote product company',
+        f'"Risk Assessment" analyst jobs Bangalore India OR remote 6 years experience',
+        f'"Third Party Risk" remote jobs India product company',
+        f'"Vendor Risk Management" remote OR Bangalore India jobs'
     ]
     
     async with aiohttp.ClientSession() as session:
